@@ -34,7 +34,7 @@ def fetch_feed(url, max_items=5):
 
 def analyze_innovation_and_ai(article_text):
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash-002')
+        model = genai.GenerativeModel('models/gemini-2.0-flash')
         
         prompt = f"""You are analyzing pharmaceutical marketing and communications content.
 
@@ -57,7 +57,7 @@ Keep your response concise and structured exactly as shown above."""
 
 def generate_whitespace_analysis(all_articles):
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash-002')
+        model = genai.GenerativeModel('models/gemini-2.0-flash')
         
         prompt = f"""You are a pharmaceutical marketing strategist analyzing competitive intelligence.
 
